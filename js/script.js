@@ -5,7 +5,7 @@ document.querySelectorAll('.bg').forEach(b=>b.innerHTML='<img class="bgm" src="a
 
 // Posisi gambar batu-hijau per slide (satuan cqw = % lebar undangan). Makin NEGATIF = makin keluar layar.
 // atas = batu di bagian atas, bawah = batu di bagian bawah. (Slide genap tercermin kiri-kanan oleh desain.)
-const BATU={2:{atas:-56,bawah:-58},3:{atas:-55},6:{atas:-53}};
+const BATU={2:{atas:-56,bawah:-50},3:{atas:-50},6:{atas:-50}};
 secs.forEach((s,i)=>{const c=BATU[i+1];if(!c)return;const a=s.querySelector('.ag1'),b=s.querySelector('.ag2');
  if(c.atas!=null&&a)a.style.right=c.atas+'cqw';if(c.bawah!=null&&b)b.style.left=c.bawah+'cqw'});
 secs.forEach((s,i)=>{const b=document.createElement('button');b.ariaLabel='Slide '+(i+1);b.onclick=()=>s.scrollIntoView({behavior:'smooth'});dots.append(b)});
