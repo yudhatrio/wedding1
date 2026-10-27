@@ -1,4 +1,4 @@
-# Undangan Digital Yudha & Arsya
+# Struktur Undangan
 
 Struktur:
 - `index.html` — isi/teks undangan (komentar penanda tiap slide)
